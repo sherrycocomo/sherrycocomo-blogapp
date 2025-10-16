@@ -26,13 +26,13 @@
       %div
         = f.label :password_confirmation
       %div
-        = f.password_field :password_confirmation, autocomplete: "new-password"
+        = f.password_field :password_confirmation, autocomplete: "new-password", class: 'text'
     .field
       %div
         = f.label :current_password
         %i (we need your current password to confirm your changes)
       %div
-        = f.password_field :current_password, autocomplete: "current-password"
+        = f.password_field :current_password, autocomplete: "current-password", class: 'text'
     .actions
       = f.submit "Update"
   %h3 Cancel my account
