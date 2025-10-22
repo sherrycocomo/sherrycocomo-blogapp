@@ -9,3 +9,13 @@
     padding: 16px 0;
     font-weight: bold;
 }
+.delete_article_btn {
+    border:none;
+    background-color: transparent;
+    color: $text-base-color;
+    padding: 8px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 12px;
+    cursor: pointer;
+}

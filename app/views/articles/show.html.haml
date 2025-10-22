@@ -11,7 +11,10 @@
           = image_tag 'actions.svg', class: 'dropbtn'
           .dropdown-content.mini
             = link_to '編集する', edit_article_path(@article)
-            = link_to '削除する', article_path(@article), data: { turbo_method: 'delete', turbo_confirm: '本当に削除してもよろしいですか？' }
+            = button_to '削除する', article_path(@article),
+                method: :delete,
+                data: { turbo_confirm: '本当に削除してもよろしいですか？' },
+                class: 'delete_article_btn'
   .article_content
     = @article.content
   .article_heart
