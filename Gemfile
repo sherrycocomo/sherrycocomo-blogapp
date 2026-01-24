@@ -22,12 +22,12 @@ gem 'jbuilder'
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
 gem 'annotate'
+gem 'aws-sdk-s3', require: false
 gem 'better_errors'
 gem 'binding_of_caller'
 gem 'devise'
 gem 'faker'
 gem 'hamlit'
-gem 'aws-sdk-s3', require: false
 
 # Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
 # gem "bcrypt", "~> 3.1.7"
@@ -39,7 +39,9 @@ gem 'tzinfo-data', platforms: %i[ windows jruby ]
 gem 'bootsnap', require: false
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
-# gem "image_processing", "~> 1.2"
+gem 'image_processing', '~> 1.2'
+gem 'psych', '~> 3.1'
+gem 'webpacker', '~> 4.0', '>= 4.0.7'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
@@ -68,5 +70,5 @@ end
 
 gem 'sassc-rails'
 
-gem 'importmap-rails'
 gem 'dotenv-rails'
+gem 'importmap-rails'
