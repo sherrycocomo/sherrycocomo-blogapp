@@ -1,4 +1,5 @@
-import Rails from "https://ga.jspm.io/npm:@rails/ujs@7.1.3-4/app/assets/javascripts/rails-ujs.esm.js"
-Rails.start()
+// Configure your import map in config/importmap.rb. Read more: https://github.com/rails/importmap-rails
 
-import "@hotwired/turbo-rails"
+import "@hotwired/turbo"
+import "trix"
+import "@rails/actiontext"

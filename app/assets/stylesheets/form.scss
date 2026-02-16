@@ -19,3 +19,19 @@ textarea {
   resize: vertical;
   border: 1px solid #EBEBEB;
 }
+
+trix-editor {
+  width: 100%;
+  margin: 8px 0;
+  min-height: 440px;
+  border: 1px solid #EBEBEB;
+  background: #fff;
+}
+
+trix-toolbar {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  background: #f9f9f9;
+  border: 1px solid #EBEBEB;
+}
