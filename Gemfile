@@ -72,3 +72,4 @@ gem 'sassc-rails'
 
 gem 'dotenv-rails'
 gem 'importmap-rails'
+gem 'active_decorator'
